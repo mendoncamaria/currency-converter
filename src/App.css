@@ -1,42 +1,71 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 35px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  height: auto;
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input {
+  padding-left: 5px;
+  font-size: 20px;
+  height: 36px;
 }
 
-.card {
-  padding: 2em;
+.middle,
+.right {
+  width: 120px;
 }
 
-.read-the-docs {
-  color: #888;
+.switch {
+  padding: 5px;
+  background-color: rgb(226, 252, 184);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.result {
+  box-sizing: border-box;
+  width: 800px;
+  padding-left: 30px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  border: 2px solid forestgreen;
+  background-color: rgb(226, 252, 184);
+  cursor: pointer;
+}
+
+p,
+h3,
+button,
+.switch {
+  color: forestgreen;
+}
+
+p {
+  font-size: 30px;
 }
